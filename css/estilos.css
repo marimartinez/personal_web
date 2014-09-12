@@ -1,0 +1,502 @@
+
+
+/* CUSTOM FONTS IMPORT */
+
+@font-face {
+    font-family: 'Gotham';
+    src: url(../fonts/gothambook.eot);
+    src: url(../fonts/gothambook.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/gothambook.woff) format('woff'),
+		 url(../fonts/gothambook.svg#gotham) format('svg'),
+         url(../fonts/gothambook.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Gothamitalic;
+    src: url(../fonts/gothambook-italic.eot);
+    src: url(../fonts/gothambook-italic.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/gothambook-italic.woff) format('woff'),
+		 url(../fonts/gothambook-italic.svg#gothamitalic) format('svg'),
+         url(../fonts/gothambook-italic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Gothamlight;
+    src: url(../fonts/gothamlight.eot);
+    src: url(../fonts/gothamlight.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/gothamlight.woff) format('woff'),
+		 url(../fonts/gothamlight.svg#gothamlight) format('svg'),
+         url(../fonts/gothamlight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Mercuryitalic;
+    src: url(../fonts/mercuryitalic.eot);
+    src: url(../fonts/mercuryitalic.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/mercuryitalic.woff) format('woff'),
+		 url(../fonts/mercuryitalic.svg#mercuryitalic) format('svg'),
+         url(../fonts/mercuryitalic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Mercury;
+    src: url(../fonts/mercury.eot);
+    src: url(../fonts/mercury.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/mercury.woff) format('woff'),
+		 url(../fonts/mercury.svg#mercury) format('svg'),
+         url(../fonts/mercury.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'socicon';
+    src: url('../fonts/socicon-webfont.eot');
+    src: url('../fonts/socicon-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/socicon-webfont.woff') format('woff'),
+         url('../fonts/socicon-webfont.ttf') format('truetype'),
+         url('../fonts/socicon-webfont.svg#sociconregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+ /* custom fonts init */
+
+html{
+	position: relative;
+	min-height: 100%;
+	 
+}
+
+body { 
+	font-family: 'Gotham',sans-serif; line-height: 1;
+	background-image: url('../img/bg.png');
+	background-position: center top;
+	background-repeat: repeat;
+	zoom:1;
+	margin: 0 auto;
+	/*max-width: 1200px;*/
+	padding: 0 42px;
+	text-align: center;
+	color: #807979;
+	/*STICKY FOOTER*/
+	margin-bottom: 100px!important;
+
+}
+
+.container{
+	background-color: white;
+	width: auto;
+}
+
+#logo{
+	margin:20px;
+}
+
+#menu{
+	list-style: none;
+	margin: 0;
+	padding: 21px 0 10px;
+}
+
+#menu li {
+  display: inline-block;
+  padding: 0 1em 10px;
+  font-family:'Mercury';
+}
+
+#ol{
+	list-style-position: outside;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+}
+
+ol#menu li a:hover,
+.post .one-third .sep ~ * { color: #7E7B79 }
+
+a {letter-spacing: 3px}
+li:hover, a:hover { color: #4B4746; }
+
+/* #9f9a9a  GRIS CLARO MALO*/
+
+.sep {
+  /* line-height: 22px; */
+  margin-top: 12px;
+  position: relative;
+}
+.sep:after,
+.sep:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #3e3432 url(../img/bg-alt.png) top;
+}
+
+.light{
+	margin-top: 20px;
+  	position: relative;
+  	height: 2px;
+  	border-top: 1px solid #DE0C25;
+  	width: 5%;
+  	margin: 12px auto;
+  	margin-bottom: 30px;
+
+}
+
+
+#gallery{
+	margin-top:21px;
+	margin-bottom:11px;
+	height:auto;
+	width:auto;
+	float:left;
+}
+.item {  
+	width:100%;
+	display: block;
+	font-style: normal;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+
+
+}
+
+.col-md-4{	
+	padding-left: 11px!important;
+	padding-right: 11px!important;
+	line-height: 0;
+}
+ 
+ .item + .item {
+	margin-top:22px;
+}
+
+.item, img{
+	opacity: 0.9;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+	filter: alpha(opacity=90);
+	-webkit-transition: opacity 0.3s ease-out;
+	-moz-transition: opacity 0.3s ease-out;
+	-o-transition: opacity 0.3s ease-out;
+	-ms-transition: opacity 0.3s ease-out;
+	transition: opacity 0.3s ease-out;
+	height: auto !important;
+	-webkit-filter: none;
+ 	 -moz-filter: none;
+ 	 -ms-filter: none;
+ 	-o-filter: none;
+}
+
+.item img:hover{	
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  -webkit-filter: none;
+}
+
+.item h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: none;
+  color: transparent;
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-transition: color 0.8s ease-in;
+  -moz-transition: color 0.8s ease-in;
+  -o-transition: color 0.8s ease-in;
+  -ms-transition: color 0.8s ease-in;
+  transition: color 0.8s ease-in;
+  width: 100px;
+  margin-left: -50px;
+  margin-top: -1.5em;
+  display: none\9;
+  text-align: center;
+}
+
+.item.hover img,
+ .item:hover img {
+  opacity: 0.1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
+  filter: alpha(opacity=10);
+}
+ .item.hover h2,
+ .item:hover h2 {
+  color: #7e7b79;
+  display: block\9;
+ }
+ 
+ 
+ /* 
+---------------------------------------------
+ 			INDEX - GALERÍA -FIN
+---------------------------------------------
+ 
+ */
+ 
+  /* 
+---------------------------------------------
+ 			INDEX - FOOTER
+---------------------------------------------
+ 
+ */
+     
+#footer {
+  padding-bottom: 21px;
+
+  /*--STICKY FOOTER--*/
+  position: absolute;
+  bottom: 0;
+  top: 10px;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  width:100%;
+}
+
+/*#footer .container{
+	padding-left: 0!important;
+}*/
+
+
+#social{
+	list-style: none;
+	margin: 0;
+	padding: 30px 0 10px;
+	line-height: 21px;
+}
+
+#social li {
+  display: inline-block;
+  padding: 0 1em 10px;
+  font-family:'Mercury';
+}
+
+#social li a{
+	letter-spacing:4px;
+}
+
+#social li a:hover{
+	 color: #7e7b79; /*cambiar*/
+}
+
+/*------------------------------------------------
+			END OF FOOTER
+------------------------------------------------*/
+
+
+ /* 
+---------------------------------------------
+ 			ITEM 
+--------------------------------------------- 
+ */
+
+ .post{
+ 	position: relative;
+ 	margin-top: 41px;
+ 	margin-bottom: 21px;
+ }
+
+.post h3{
+	font-family: 'Gotham',sans-serif;
+	letter-spacing: 1px;
+	line-height: 1em;
+	text-transform: uppercase;
+	color: #7e7b79;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.post h1 + h2, .post h3 + h4 {
+margin-bottom: 20px;
+}
+
+.description{
+	position: relative;
+	margin: 0 auto;
+	max-width: 63%;
+	text-align: center;
+	color: #4b4746;
+	margin-bottom: 20px;
+	font-size: 1.1em;
+}
+
+.description a{
+	letter-spacing: 1px;
+}
+.description a:hover{
+	color:#7E7B79;
+}
+
+
+.center-block{
+	margin-bottom: 1.63em;
+	margin-top: 0.63em;
+
+}
+
+.share{
+	margin: 0;
+	padding-bottom: 0px;
+}
+ 
+ .share a{
+ 	font-family: 'socicon'!important;
+ 	font-style: normal;
+	text-decoration: none!important;
+	font-size: 1.2em;
+ }
+
+ .share a:hover{
+ 	color: #7e7b79;
+ }
+
+
+/* ------- NAVIGATION PROOF ----------*/
+
+.navigation{
+	position: relative;
+	float: left!important;
+}
+
+.navclose{
+	position: absolute;
+	top:3.5em;
+}
+
+.navclose img{
+	position: fixed;
+	z-index: 100;
+	opacity: 1;
+	border: 0;
+}
+
+.navclose img:hover{
+	opacity: 0.2;
+}
+
+.navsides{
+	position: relative;
+	float: right!important;
+
+}
+
+.navleft{
+	position: absolute;
+	top:3.5em;
+	right: 1.8em;
+}
+
+.navright{
+	position: absolute;
+	top:3.5em;
+	right: 0.6em;
+}
+
+.navsides .navleft img{
+	position: fixed;
+	z-index: 100;
+	opacity: 1;
+	background-color: white;
+	border: 0;
+}
+
+.navsides .navright img{
+	position: fixed;
+	z-index: 100;
+	opacity: 1;
+	background-color: white;
+	border: 0;
+}
+
+.navsides img:hover{
+	opacity: 0.2;
+}
+
+ /* 
+---------------------------------------------
+ 			END OF ITEM -BILBAO BBK
+--------------------------------------------- 
+ */
+
+ /* 
+---------------------------------------------
+ 			CONTACTO
+--------------------------------------------- 
+ */
+
+ .descriptioncontact{
+	position: relative;
+	margin: 50px auto;
+	max-width: 55%;	
+	margin-bottom: 80px;
+
+	/* ----------------*/
+	font-family: 'Mercury',Georgia, serif;
+	font-size: 1.5em;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 1.75;
+	text-align: center;
+	color: #7e7b79;
+}
+
+.descriptioncontact a{
+	letter-spacing: 1px;
+	font-family: 'Mercury';
+	font-size: 1em;
+	color:  #4b4746;
+	
+}
+
+.descriptioncontact a:hover{
+	color:#DE0C25;
+	text-decoration: underline;
+}
+
+
+ /* 
+---------------------------------------------
+ 			ABOUT
+--------------------------------------------- 
+ */
+
+ .descriptionabout{
+	position: relative;
+	margin: 0 auto;
+	max-width: 55%;	
+	margin-bottom: 50px;
+
+	/* ----------------*/
+	font-family: 'Mercuryitalic';
+	font-size: 1.16em;
+	font-style: italic;
+	font-weight: 300;
+	line-height: 1.60;
+	text-align: center;
+	color: #7e7b79;
+}
+
+.mari{
+	width: 25%;
+	margin-bottom: 20px;
+}
+
+.cv{
+	letter-spacing: 2px;
+	font-family: 'Mercury';
+	font-size: 1.2em;
+	color:  #4b4746;
+	
+}
+
+.cv:hover{
+	color:#DE0C25;
+	text-decoration: underline;
+}
